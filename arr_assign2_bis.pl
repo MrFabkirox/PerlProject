@@ -13,14 +13,14 @@ use Data::Dump 'pp';
 
 my @arr = @ARGV;
 
-#my $position = $ARGV[0];
-#my $string = $ARGV[1];
+my $position = $#ARGV;
+my $string = $ARGV[1];
 
-my ($position, $string) = @ARGV;
+#my ($position, $string) = @ARGV;
 
 my $numberArgs = $#ARGV + 1;
 
-say pp(@arr);
+say pp(@arr[0..$numberArgs]);
 
 print "----------------------------------\n";
 

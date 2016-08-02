@@ -87,7 +87,11 @@ while ($outOfLoop = 0) {
 say pp(@arr);
 
 print "----------\n";
-
+`
     foreach my $entry (@arr) {
         print "entry: $entry\n";
     }
+    
+
+print "----------\n";
+say pp(@arr[0..3]);
